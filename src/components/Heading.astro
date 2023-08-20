@@ -1,0 +1,11 @@
+---
+interface Props {
+    text: String;
+}
+
+const { text } = Astro.props;
+---
+
+<div class="bg-secondary py-5">
+    <h1 class="text-center text-light">{text}</h1>
+</div>

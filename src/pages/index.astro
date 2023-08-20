@@ -1,15 +1,163 @@
 ---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Home";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={pageTitle}>
+    <div
+        id="hero"
+        class="vh-75 d-flex flex-column justify-content-center text-light bg-overlay"
+    >
+        <div class="container text-center">
+            <h2 class="display-5">Alloy Wheel Repair at Your Doorstep</h2>
+            <p class="lead mb-5">
+                Here at Mr. Crack & Buckle, we offer a convenient and
+                professional mobile alloy repair service at your location.
+            </p>
+            <a href="/contact" class="btn btn-light btn-lg fancy-font"
+                >Contact Us</a
+            >
+        </div>
+    </div>
+    <main class="bg-light">
+        <div class="container py-5 text-center">
+            <h1>Welcome to Mr. Crack & Buckle</h1>
+            <p>
+                Mr. Crack & Buckle is a mobile alloy wheel repair service based
+                in Poole, Dorset. We help customers who have cracked or bent
+                their alloy wheels by repairing them back to their original
+                form. Whether you've hit a pothole, or driven into a curb, we
+                can come to you and fix your damaged alloy wheel today.
+            </p>
+        </div>
+    </main>
+    <section class="container py-5 text-center">
+        <h2>Why Choose Us?</h2>
+        <p>
+            Mr. Crack & Buckle is one of Dorset's most reliable and reputable
+            mobile wheel repair companies. We have helped hundreds of customers
+            who have fallen victim to pothole damage and needed their wheels
+            welded.
+        </p>
+        <p>
+            Not only have we saved their wheel, we've also saved them money and
+            time. There is no need to arrange recovery to a garage or buy a new
+            wheel from a manufacturer; our mobile technicians can come to you at
+            a time and place that suits your schedule.
+        </p>
+    </section>
+    <section class="container py-5">
+        <h2 class="text-center mb-5">Gallery</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/alloy-crack.jpg"
+                    alt="Hairline crack in alloy wheel."
+                    class="w-100"
+                />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/badly-bent-alloy.jpg"
+                    alt="Black alloy wheel badly buckled."
+                    class="w-100"
+                />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/alloy-wheel-well-welded.jpg"
+                    alt="Cracked wheel well that has been welded."
+                    class="w-100"
+                />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/bent-ford-wheel.jpg"
+                    alt="Ford alloy wheel with a buckle."
+                    class="w-100"
+                />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/bent-rim.jpg" alt="Bent alloy wheel leaking air." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/black-alloy-welded.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/black-wheel-welded.jpg" alt="Black alloy with a weld to repair a crack. The weld has then been painted black." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/buckle-before-repair.jpg"
+                    alt=""
+                    class="w-100"
+                />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/buckled-alloy.jpg" alt="Inner section of wheel buckled." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/buckled-alloy.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/buckled-car-wheel.jpg" alt="Flat spot on alloy wheel that needs straightening." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/buckled-range-rover-wheel.jpg"
+                    alt=""
+                    class="w-100"
+                />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/buckled-rim.jpg" alt="Badly buckled rim after hitting a pothole." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/buckled-wheel.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/cracked-alloy-wheel.jpg" alt="Small crack in alloy wheel which is causing an air leak." class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img
+                    src="/imgs/hairline-crack-alloy.jpg"
+                    alt=""
+                    class="w-100"
+                />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/curbed-alloy.jpg" alt="" class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/damaged-alloy.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/damaged-rim.jpg" alt="" class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/major-wheel-buckle.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/prepared-alloy.jpg" alt="" class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/repaired-alloy.jpg" alt="" class="w-100" />
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/repaired-wheel.jpg" alt="" class="w-100" />
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <img src="/imgs/smoothed-wheel-weld.jpg" alt="" class="w-100" />
+            </div> -->
+        </div>
+    </section>
+</Layout>
+
+<style>
+    #hero {
+        background-image: url("/imgs/buckled-wheel.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+    }
+</style>
