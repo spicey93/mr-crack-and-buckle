@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CTA from "../components/CTA.astro";
 const pageTitle = "Home";
 ---
 
@@ -8,7 +9,7 @@ const pageTitle = "Home";
         id="hero"
         class="vh-75 d-flex flex-column justify-content-center text-light bg-overlay"
     >
-        <div class="container text-center">
+        <div class="container">
             <h2 class="display-5">Alloy Wheel Repair at Your Doorstep</h2>
             <p class="lead mb-5">
                 Here at Mr. Crack & Buckle, we offer a convenient and
@@ -133,13 +134,14 @@ const pageTitle = "Home";
             </div>
         </div>
     </section>
+    <CTA />
 </Layout>
 
 <style>
     #hero {
-        background-image: url("/imgs/buckled-wheel.jpeg");
+        background-image: url("/imgs/prepared-alloy.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-position: center; */
+        background-position: bottom;
     }
 </style>
