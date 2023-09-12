@@ -3,27 +3,10 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 <header>
-    <!-- <div class="container py-3">
-        <div class="col-md-6 col-lg-5 col-8">
-            <img src="logo.png" alt="" class="w-100">
-        </div>
-        <div
-        class="col-md-6 col-lg-7 logo-font d-none d-md-flex flex-column justify-content-center align-items-end">
-        <p class="mb-0 fs-3">Call Now For a Quote</p>
-        <a href="tel:07400247297" class="btn btn-primary btn-lg fs-3 text-secondary"><i
-                class="bi bi-telephone-fill"></i> 07400
-            247
-            297</a>
-    </div>
-    <div class="col-4 d-md-none d-flex align-items-center justify-content-end">
-        <a href="tel:07400247297" class="btn btn-primary"><i
-                class="bi bi-telephone-fill text-secondary"></i></a>
-    </div>
-    </div> -->
     <div class="container py-3">
         <div class="row">
             <div class="col-5 col-md-4 col-lg-3">
-                <img src="logo.png" alt="Mr. Crack & Buckle logo." class="w-100">
+                <img src="./logo.png" alt="Mr. Crack & Buckle logo." class="w-100">
             </div>
             <div class="col-6 col-md-8 col-lg-9 d-none d-md-flex flex-column justify-content-center align-items-end">
                 <p class="fs-3 mb-1">Call Now For a Quote</p>
